@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#home'
+
+  get '/api/v1/shipments', to: 'shipments#index'
 end
